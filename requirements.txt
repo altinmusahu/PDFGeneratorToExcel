@@ -1,0 +1,4 @@
+flask
+pandas
+PyPDF2
+openpyxl
