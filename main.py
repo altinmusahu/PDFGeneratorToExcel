@@ -70,7 +70,8 @@ def upload_files():
         mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
     )
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import os
     port = int(os.environ.get("PORT", 5000))
+    print(f"Starting Flask app on port {port}")
     app.run(host="0.0.0.0", port=port)
