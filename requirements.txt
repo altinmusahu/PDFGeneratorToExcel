@@ -1,4 +1,5 @@
-flask
+gunicorn
+Flask
 pandas
 PyPDF2
 openpyxl
