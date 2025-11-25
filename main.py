@@ -24,7 +24,7 @@ def extract_case_info_from_form(file):
 
         if "case" in key_lower and "name" in key_lower:
             name = str(value)
-        elif "street" in key_lower or "address" in key_lower:
+        elif "street" in key_lower or "street" in key_lower:
             street = str(value)
         elif "city" in key_lower:
             city = str(value)
@@ -48,12 +48,12 @@ def upload_files():
         case_info = extract_case_info_from_form(file)
 
         name = case_info.get("Case Name")
-        address = case_info.get("Street")
+        street = case_info.get("Street")
         city = case_info.get("City")
     
         extracted_data.append({
             "Name": name,
-            "Address": address,
+            "Street": street,
             "City": city
         })
 
